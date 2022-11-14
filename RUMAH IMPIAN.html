@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Rumah Impian</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+      <!-- load font awesome for icons -->
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+      <!-- add your custom CSS -->
+      <style>
+        body {
+        font-family: sans-serif;
+        }
+
+        /* Add WA floating button CSS */
+        .floating {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        }
+
+        .fab-icon {
+        margin-top: 16px;
+        }
+      </style>
+
+      <!-- render the button and direct it to wa.me -->
+      <a href="https://wa.me/6285377745621?text=Hi%20Arif%20Saya tertarik dengan perumahan yang anda tawarkan, boleh saya bertanya ?" class="floating" target="_blank">
+      <i class="fab fa-whatsapp fab-icon"></i>
+      </a>
+    </head>
+    <body>
+      <!-- START: Nav-Header -->
+      <section>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light pt-3 pt-lg-5">
+          <!-- Style -->
+            <style scoped>
+                @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+                * {
+                    font-family: 'Inter', sans-serif !important;
+                }
+
+                body {
+                    background-color: #FFFFFF;
+                }
+
+                body nav .navbar-brand h5 {
+                    font-weight: 700 !important;
+                    size: 28px;
+                    line-height: 150%;
+                }
+
+                body nav .navbar-nav .nav-link {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #739AD4 !important;
+                    margin: 0 30px;
+                }
+
+                body nav .navbar-nav .active {
+                    color: #080E09 !important;
+                    width: 100%;
+                    display: -webkit-box !important;
+                    display: -ms-flexbox !important;
+                    display: flex !important;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                }
+
+                body nav .navbar-nav .active a {
+                    width: 12px;
+                }
+
+                body nav .navbar-nav .border-bottom {
+                    border-bottom: 2px solid #0F52BA !important;
+                }
+
+                @media screen and (min-width: 993px) {
+                    body nav .navbar-nav {
+                        margin-left: 560px;
+                    }
+                }
+            </style>
+
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h5 class="mb-0">House</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active border-bottom" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="#partner">Partner</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="#perum-recomended">Recommendation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <section class="container">
+          <!-- style Header -->
+            <style scoped>
+                /* @media screen and (min-width: 768px) {
+                    body .pl-house {
+                        margin: 0 !important;
+                        padding-left: 100px;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    body .pl-house {
+                        margin: 0 10px 0 5px !important;
+                    }
+                } */
+
+                body #header {
+                    margin-top: 138px;
+                    margin-bottom: 100px;
+                    width: 100% !important;
+                }
+
+                @media screen and (max-width: 768px) {
+                    body #header {
+                        margin-top: 50px;
+                        margin-bottom: 50px;
+                    }
+                }
+
+                body .img-header {
+                    z-index: -1;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
+                body .explore {
+                    background-color: #080E09;
+                    padding-top: 100px;
+                    padding-bottom: 50px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    body .explore {
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                    }
+                }
+
+                body .explore .descript-explore {
+                    max-width: 75%;
+                }
+
+                body .pt-35 {
+                    padding-top: 35px;
+                }
+
+                body .title h1 {
+                    font-size: 72px;
+                    font-weight: 700;
+                    line-height: 150%;
+                }
+
+                @media screen and (max-width: 768px) {
+                    body .title h1 {
+                        font-size: 48px;
+                    }
+                }
+
+                body .stat {
+                    margin-top: 48px;
+                }
+
+                body .stat h2 {
+                    font-size: 48px;
+                    font-weight: 800;
+                }
+
+                @media screen and (max-width: 768px) {
+                    body .stat h2 {
+                        font-size: 28px;
+                    }
+                }
+
+                body .stat p {
+                    font-size: 16px;
+                    color: #ADB2B8;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+
+                body .stat .descript-head {
+                    max-width: 90%;
+                }
+
+                body .btn-blue {
+                    background-color: #0F52BA;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 16px;
+                    border-radius: 12px;
+                    margin-top: 48px;
+                }
+
+                body .gallery {
+                    padding: 10px 0;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    body .gallery {
+                        margin: 50px 0;
+                    }
+                }
+
+                body .gallery .card-hotel-carousel {
+                    width: 325px;
+                    margin-right: 64px;
+                    padding: 28px 28px 40px;
+                    border-radius: 28px;
+                    background: white;
+                    -webkit-box-shadow: 20px 8px 18px rgba(178, 177, 255, 0.05);
+                    box-shadow: 20px 8px 18px rgba(178, 177, 255, 0.05);
+                }
+
+                @media only screen and (max-width: 768px) {
+                    body .gallery .card-hotel-carousel {
+                        margin-right: 20px;
+                    }
+                }
+
+                body .gallery .card-hotel-carousel .image-placeholder {
+                    width: 268px;
+                    height: 190px;
+                }
+
+                body .gallery .card-hotel-carousel .image-placeholder img {
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    border-radius: 16px;
+                }
+
+                body .gallery .card-hotel-carousel .card-details {
+                    padding-bottom: 53px;
+                    height: 150px;
+                }
+
+                body .gallery .card-hotel-carousel .card-details .caption {
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #080E09;
+                    margin-top: 24px;
+                }
+
+                body .gallery .card-hotel-carousel .card-details .sub-caption {
+                    font-weight: 400;
+                    color: #ADB2B8;
+                }
+
+                body .gallery .card-hotel-carousel .bottom-text .price-content {
+                    color: #080E09;
+                    font-size: 16px;
+                }
+
+                body .gallery .card-hotel-carousel .bottom-text .price-content span {
+                    font-weight: 400;
+                }
+
+                body .gallery .card-hotel-carousel .bottom-text .price-content span.price {
+                    font-weight: 700;
+                }
+
+                body .gallery .card-hotel-carousel .bottom-text .rating {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #FF9900;
+                }
+
+                body .gallery .card-hotel-carousel .bottom-text .rating img {
+                    margin-top: -1px;
+                    margin-right: 5px;
+                }
+
+                @media screen and (min-width: 600px) {
+                    body .image-content .img-fluid {
+                        height: 144.953px;
+                    }
+                }
+
+                body .text-content h1 {
+                    font-size: 60px !important;
+                    line-height: 150%;
+                    color: white;
+                }
+
+                body .text-content p {
+                    font-size: 16px;
+                    color: #ADB2B8;
+                    font-weight: 400;
+                    line-height: 28px;
+                    padding-bottom: 108px;
+                }
+
+                body .place .img-place-header {
+                    width: 100% !important;
+                }
+
+                body .scrolling-wrapper {
+                    overflow-x: auto;
+                }
+
+                body .section::-webkit-scrollbar {
+                    height: 0 !important;
+                }
+
+                body .section::-webkit-scrollbar-track {
+                    background-color: #e4e4e4;
+                    border-radius: 100px;
+                }
+
+                body .section::-webkit-scrollbar-thumb {
+                    background-color: #05BB2D;
+                    border-radius: 100px;
+                }
+            </style>
+            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/bg-header.svg"
+                alt="bg-header" class="img-header d-none d-md-block">
+            <div class="row mx-0" id="header">
+                <div class="col-xl-6">
+                    <div class="title">
+                        <h1>
+                            Wujudkan Rumah Impian
+                        </h1>
+                    </div>
+                    <div class="d-flex stat">
+                        <div class="text-left me-4 me-md-5">
+                            <h2>
+                                500
+                            </h2>
+                            <p>
+                                Jumlah unit rumah
+                            </p>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="px-md-5 px-4">
+                            <h2>
+                                80
+                            </h2>
+                            <p>
+                                Jumlah Pengembang
+                            </p>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="ms-4 ms-md-5">
+                            <h2>
+                                80
+                            </h2>
+                            <p>
+                                Lokasi di Lampung
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p class="descript-head">
+                            Kami partner terbaik,<br> yang akan temani langkah mu untuk miliki Rumah Impian
+                        </p>
+                    </div>
+                    <!-- <div>
+                        <button class="btn btn-blue px-5 py-3 shadow" 
+                        onclick="document.getElementsByClassName('porto')">
+                            Temukan Rumah
+                        </button>
+                    </div> -->
+                </div>
+                <div class="col-xl-6 my-auto">
+                    <div class="gallery row p-md-4 section scrolling-wrapper flex-row flex-nowrap">
+                        <!-- CARD 1 -->
+                        <div class="card-hotel-carousel">
+                            <div class="image-placeholder">
+                                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/place.png"
+                                    alt="images" />
+                            </div>
+                            <div class="card-details">
+                                <div class="caption">Tretes Hotel INA</div>
+                                <span class="sub-caption">150m</span>
+                            </div>
+                            <div class="bottom-text d-flex flex-row justify-content-between">
+                                <div class="price-content flex-grow-1">
+                                    <span>Start from</span> <span class="price">40 USD</span>
+                                </div>
+                                <div class="rating d-flex align-items-center">
+                                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                                        alt="star" />
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CARD 1 -->
+                        <!-- CARD 2 -->
+                        <div class="card-hotel-carousel">
+                            <div class="image-placeholder">
+                                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/place-2.png"
+                                    alt="images" />
+                            </div>
+                            <div class="card-details">
+                                <div class="caption">Hotel Mawar & Melati Putih</div>
+                                <span class="sub-caption">120m</span>
+                            </div>
+                            <div class="bottom-text d-flex flex-row justify-content-between">
+                                <div class="price-content flex-grow-1">
+                                    <span>Start from</span> <span class="price">40 USD</span>
+                                </div>
+                                <div class="rating d-flex align-items-center">
+                                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                                        alt="star" />
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CARD 2 -->
+                        <!-- CARD 3 -->
+                        <div class="card-hotel-carousel">
+                            <div class="image-placeholder">
+                                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/place.png"
+                                    alt="images" />
+                            </div>
+                            <div class="card-details">
+                                <div class="caption">Tretes Hotel INA</div>
+                                <span class="sub-caption">150m</span>
+                            </div>
+                            <div class="bottom-text d-flex flex-row justify-content-between">
+                                <div class="price-content flex-grow-1">
+                                    <span>Start from</span> <span class="price">40 USD</span>
+                                </div>
+                                <div class="rating d-flex align-items-center">
+                                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                                        alt="star" />
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CARD 3 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+      </section>
+      <!-- END: Nav-Header -->
+
+      <!-- START: Perum Inara -->
+      <section class="products position-relative overflow-hidden">
+        <!-- style -->
+        <style scoped>
+          @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+          * {
+            font-family: 'Poppins', 'Inter', sans-serif !important;
+          }
+
+          body .right-circle img {
+            z-index: 0;
+            margin-top: -250px;
+            position: absolute;
+          }
+
+          body .porto {
+            background-color: #000909;
+            padding: 50px 30px;
+          }
+
+          @media only screen and (min-width: 768px) {
+            body .porto {
+              padding-top: 140px;
+              padding-bottom: 100px;
+            }
+          }
+
+          body .porto .headline {
+            font-size: 40px;
+            font-weight: 600;
+            color: #EEEEEE;
+            z-index: 1;
+          }
+
+          body .porto .link {
+            font-size: 24px;
+            font-weight: 600;
+            color: #EEEEEE;
+            z-index: 1;
+          }
+
+          body .porto .sub-headline {
+            padding-top: 28px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #888888;
+            z-index: 1;
+          }
+
+          @media only screen and (min-width: 768px) {
+            body .porto .sub-headline {
+              font-size: 24px;
+            }
+          }
+
+          body .porto .porto-img {
+            margin-top: 45px;
+          }
+
+          body .porto .porto-img div {
+            z-index: 1;
+          }
+
+          @media only screen and (min-width: 768px) {
+            body .porto .porto-img {
+              margin-top: 96px;
+            }
+          }
+
+          body .porto .porto-img-full {
+            z-index: 1;
+          }
+
+          @media only screen and (max-width: 768px) {
+            body .porto .porto-img-full {
+              width: 100px !important;
+            }
+          }
+
+          body .porto .porto-img-half {
+            z-index: 1;
+          }
+
+          @media only screen and (max-width: 768px) {
+            body .porto .porto-img-half {
+              height: 70px !important;
+            }
+          }
+
+          body .cl-light {
+            color: #EEEEEE;
+          }
+
+          body .cl-light-grey-2 {
+            color: #90BCB7;
+          }
+
+          body .font-lora {
+            font-family: 'Lora', sans-serif !important;
+          }
+        </style>
+        <!-- <section class="right-circle">
+          <div class="d-flex justify-content-end">
+            <img
+              src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/Right-Circle.png"
+              alt="circle" />
+          </div>
+        </section> -->
+
+        <section class="porto" id="perum-recomended">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-10">
+              <h4 class="headline">
+                Perumahan Inara Residence
+              </h4>
+            </div>
+            <!-- <div class="col-md-2 text-md-right">
+              <a href="#" class="link h-100 d-inline-block text-decoration-none">
+                See more
+              </a>
+            </div> -->
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="sub-headline">
+                Terletak di lokasi strategis, Bangunan bertipe 36 dengan ukuran 84m<sup>2</sup> <br>
+                Spesifikasi bangunan dengan 2 kamar tidur, 1 kamar mandi, dapur, halaman umum, listrik jenis token dan bonus mesin air
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center gap-4 porto-img">
+            <!-- <div>
+              <img src="./image-Inara/inara-5.png"
+                class="img-fluid" style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;"
+                width="400" height="600"/>
+            </div> -->
+            <div class="d-flex flex-column gap-3">
+              <img src="./image-Inara/inara-1.png"
+                class="img-fluid" style="border-radius: 5%;">
+              <img src="./image-Inara/inara-4.jpg"
+                class="img-fluid mt-auto" style="border-radius: 5%;"/>
+            </div>
+            <div>
+              <img src="./image-Inara/inara-7.png"
+                class="img-fluid" style="border-radius: 5%;"/>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- END: Perum Inara -->
+      
+      <!-- START: User Reviews -->
+      <section class="best-user-reviewss">
+        <!-- style -->
+        <style scoped>
+          @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+          * {
+            font-family: 'Inter', sans-serif !important;
+          }
+
+          body .img-best-user-reviewss {
+            z-index: -1 !important;
+            right: 0 !important;
+            position: absolute;
+            margin-top: 92px;
+            margin-right: 68px;
+          }
+
+          body .best-user-reviewss {
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+
+          body .best-user-reviewss h1 {
+            color: #232323;
+            font-weight: 700 !important;
+          }
+
+          .best-user-reviewss .star-img-rating {
+            width: 24px !important;
+            height: 24px;
+            object-fit: cover;
+          }
+
+          @media screen and (min-width: 768px) {
+            body .best-user-reviewss {
+              padding-bottom: 188px;
+            }
+
+            body .best-user-reviewss h1 {
+              font-size: 60px !important;
+            }
+          }
+
+          @media screen and (min-width: 768px) {
+            body .best-user-reviewss .container {
+              padding-top: 120px;
+            }
+
+            body .best-user-reviewss .container h1 {
+              width: 722px;
+              font-size: 60px;
+              line-height: 90px !important;
+            }
+          }
+
+          body .best-user-reviewss .container h1 {
+            line-height: 50px;
+            font-weight: 700 !important;
+          }
+
+          body .best-user-reviewss .container .testi-text {
+            line-height: 28px;
+            color: #9C9C9C;
+          }
+
+          @media screen and (min-width: 768px) {
+            body .best-user-reviewss .container .testi-text {
+              width: 500px;
+            }
+          }
+
+          body .best-user-reviewss .container .card {
+            border-radius: 28px;
+            border: none !important;
+            -webkit-box-shadow: 20px 8px 18px rgba(178, 177, 255, 0.05);
+            box-shadow: 20px 8px 18px rgba(178, 177, 255, 0.05);
+          }
+
+          body .best-user-reviewss .container .card p {
+            color: #9C9C9C;
+          }
+
+          body .cl-black {
+            color: black !important;
+          }
+
+          body .cl-orange {
+            color: #FF9900;
+          }
+
+          body .cl-dusty-grey {
+            color: #9C9C9C;
+          }
+
+          body .place .img-place-header {
+            width: 100% !important;
+          }
+        </style>
+        <img
+          src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/testimonial-photo-bg.png"
+          alt="bg-best-user-reviewss" class="img-best-user-reviewss d-none d-md-block">
+        <div class="container px-3">
+          <h1>
+            Testimoni Customer
+          </h1>
+          <div class="row mt-5">
+            <div class="col-md-6 p-0">
+              <div class="d-flex align-items-center mx-1 mb-4">
+                <img
+                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                  alt="star" class="me-2 star-img-rating">
+                <img
+                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                  alt="star" class="me-2 star-img-rating">
+                <img
+                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                  alt="star" class="me-2 star-img-rating">
+                <img
+                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                  alt="star" class="me-2 star-img-rating">
+                <img
+                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                  alt="star" class="me-2 star-img-rating">
+              </div>
+              <p class="testi-text pb-md-4 px-3">
+                “disini tempat untuk menginformasikan testimoni customer, 
+                serta menampilkan gambar dari rumah customer.”
+              </p>
+              <div class="row my-5 ps-3 mx-0">
+                <div class="col-2 px-0">
+                  <img
+                    src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/testimonial-user.png"
+                    alt="testi-user" class="img-fluid">
+                </div>
+                <div class="col-10 ps-4 my-auto">
+                  <h3 class="font-weight-bold">
+                    Laurent Dominic
+                  </h3>
+                  <p class="m-0 font-weight-semi-bold cl-dusty-grey">
+                    Founder of Blank Company
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card p-4" style="width: 20.25rem;">
+                <img src="./image-Inara/inara-5.png"
+                  alt="img-place" class="img-fluid img-place-header">
+                <h3 class="mt-4 font-weight-bold">
+                  Blok A No 1
+                </h3>
+                <p class="mb-5">
+                  Luas tanah 84m<sup>2</sup> 
+                </p>
+                <!-- <div class="row">
+                  <div class="col-8">
+                    <p class="cl-black">
+                      Start from <strong>40 USD</strong>
+                    </p>
+                  </div>
+                  <div class="col-4 cl-orange text-end">
+                    <strong>
+                      <img
+                        src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                        alt="star" class="img-fluid"> 4.8
+                    </strong>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: User Reviews -->
+  
+      <!-- START: Perum lainnya-->
+      <section class="explore">
+        <!-- style -->
+        <style scoped>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+            * {
+                font-family: 'Inter', sans-serif !important;
+            }
+
+            @media screen and (min-width: 768px) {
+                body .pl-house {
+                    margin: 0 !important;
+                    padding-left: 100px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                body .pl-house {
+                    margin: 0 10px 0 5px !important;
+                }
+            }
+
+            body .explore {
+                background-color: #080E09;
+                padding-top: 100px;
+                padding-bottom: 50px;
+            }
+
+            @media screen and (max-width: 768px) {
+                body .explore {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                }
+            }
+
+            body .explore .descript-explore {
+                max-width: 75%;
+            }
+
+            body .scrolling-wrapper {
+                overflow-x: auto;
+            }
+
+            body .section::-webkit-scrollbar {
+                height: 0 !important;
+            }
+
+            body .section::-webkit-scrollbar-track {
+                background-color: #e4e4e4;
+                border-radius: 100px;
+            }
+
+            body .section::-webkit-scrollbar-thumb {
+                background-color: #05BB2D;
+                border-radius: 100px;
+            }
+
+            body .cl-blue {
+                color: #0F52BA !important;
+            }
+
+            body .btn-blue {
+                background-color: #0F52BA;
+                color: white;
+                font-weight: 600;
+                font-size: 16px;
+                border-radius: 12px;
+                margin-top: 48px;
+            }
+
+            body .text-content h1 {
+                font-size: 60px !important;
+                line-height: 150%;
+                color: white;
+            }
+
+            body .text-content p {
+                font-size: 16px;
+                color: #ADB2B8;
+                font-weight: 400;
+                line-height: 28px;
+                padding-bottom: 108px;
+            }
+
+            body .title h1 {
+                font-size: 72px;
+                font-weight: 700;
+                line-height: 150%;
+            }
+
+            @media screen and (max-width: 768px) {
+                body .title h1 {
+                    font-size: 48px;
+                }
+            }
+
+            body .section::-webkit-scrollbar {
+                height: 0 !important;
+            }
+
+            body .section::-webkit-scrollbar-track {
+                background-color: #e4e4e4;
+                border-radius: 100px;
+            }
+
+            body .section::-webkit-scrollbar-thumb {
+                background-color: #05BB2D;
+                border-radius: 100px;
+            }
+
+            body .img-explore {
+                height: 600px;
+                padding: 0;
+            }
+
+            @media only screen and (max-width: 768px) {
+                body .img-explore {
+                    height: 300px;
+                }
+            }
+
+            body .img-explore img {
+                width: 452px !important;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                border-radius: 24px;
+                margin-right: 72px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                body .img-explore img {
+                    width: 226px !important;
+                }
+            }
+        </style>
+
+        <div class="pl-house" id="partner">
+            <div class="row text-content title pt-35 my-0 mx-0" id="header">
+                <div class="col-md-9 px-md-0">
+                    <h1 class="pb-3">
+                        Lihat juga Rekomendasi lainnya..
+                    </h1>
+                    <p class="pb-0 descript-explore">
+                        Sejak 2018 Kami berdedikasi menjadi partner terbaik dan telah berhasil membantu <span class="cl-blue">1000+ Nasabah </span>
+                        dan Siapapun untuk memiliki rumah.
+                    </p>
+                </div>
+                <!-- <div class="col-md-3 mt-md-3">
+                    <button class="btn btn-blue px-5 py-3 mt-0">Konsultasi</button>
+                </div> -->
+            </div>
+            <div class="row section scrolling-wrapper flex-row flex-nowrap mt-3 img-explore mx-2">
+                <img src="./image-Inara/perum-griya-jati-asri.png"
+                    alt="image-1" class="img-fluid">
+                <img src="./image-Inara/perum-griya-sakinah.png"
+                    alt="image-2" class="img-fluid">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/image-3.jpeg"
+                    alt="image-3" class="img-fluid">
+            </div>
+        </div>
+      </section>
+      <!-- END: Perum lainnya-->
+
+      <!-- START: Alur-->
+      <section class="content">
+        <!-- style -->
+        <style scoped>
+          @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+          * {
+            font-family: 'Poppins', sans-serif !important;
+          }
+
+          body .content {
+            background: #FFFFFF;
+          }
+
+          body .content .content {
+            padding-top: 70px;
+            padding-bottom: 70px;
+          }
+
+          body .content .content .tagline {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+            color: #DB0D70;
+          }
+
+          body .content .content .headline {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 67px;
+            color: #111F37;
+          }
+
+          body .content .content .benefits {
+            margin-top: 50px;
+            padding-bottom: 50px;
+          }
+
+          body .content .content .benefits .rectangle {
+            max-width: 288px;
+            max-height: 334px;
+            border: 1px solid #9BA8BE;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border-radius: 26px;
+          }
+
+          body .content .content .benefits .rectangle img {
+            margin-top: 50px;
+          }
+
+          body .content .content .benefits .rectangle .headline-benefit {
+            margin-top: 40px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            /* identical to box height */
+            text-align: center;
+            color: #111F37;
+          }
+
+          body .content .content .benefits .rectangle .subheadline-benefit {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            /* or 175% */
+            text-align: center;
+            color: #627492;
+            margin-bottom: 40px;
+          }
+
+          body .content .content .img-brand {
+            margin-top: 50px;
+          }
+
+          body .content .content .img-brand img {
+            margin-right: 60px;
+          }
+
+          @media only screen and (max-width: 768px) {
+            body .content .content .img-brand img {
+              margin-right: 30px;
+              margin-left: 30px;
+            }
+          }
+
+          /*# sourceMappingURL=main.css.map */
+        </style>
+
+        <div class="container">
+          <div class="row content">
+            <div class="col-12 px-md-0 my-auto">
+              <div class="tagline">
+                Alur
+              </div>
+              <div class="headline mt-3">
+                Setelah menentukan pilihan <br class="d-none d-md-block">
+                Kami akan dampingi semua partner
+              </div>
+              <div class="row benefits text-center px-0">
+                <div class="col-md-3 mt-md-0">
+                  <div class="rectangle mx-auto px-1">
+                    <img
+                      src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-worldwide.svg"
+                      alt="benefits-1" class="img-fluid">
+                    <div class="headline-benefit">
+                      Jadwalkan Kunjungan
+                    </div>
+                    <div class="subheadline-benefit mt-2">
+                      Survey lokasi bersama kami
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-5 mt-md-0">
+                  <div class="rectangle mx-auto px-1">
+                    <img
+                      src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-corporate.svg"
+                      alt="benefits-1" class="img-fluid">
+                    <div class="headline-benefit">
+                      Pembayaran DP
+                    </div>
+                    <div class="subheadline-benefit mt-2">
+                      Cara terbaik untuk memulai
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-5 mt-md-0">
+                  <div class="rectangle mx-auto px-1">
+                    <img
+                      src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-secure.svg"
+                      alt="benefits-1" class="img-fluid">
+                    <div class="headline-benefit">
+                      Akad Transaksi
+                    </div>
+                    <div class="subheadline-benefit mt-2">
+                      Proses mudah dan akuntable
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-5 mt-md-0">
+                  <div class="rectangle mx-auto px-1">
+                    <img
+                      src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-rewards.svg"
+                      alt="benefits-1" class="img-fluid">
+                    <div class="headline-benefit">
+                      Terima kunci
+                    </div>
+                    <div class="subheadline-benefit mt-2">
+                      Setelah selesai dibangun
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- logo perusahaan mitra -->
+              <!-- <div class="d-flex align-items-center img-brand justify-content-center">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-adobe.png"
+                  alt="brand" class="img-fluid">
+                <img
+                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-spotify.png"
+                  alt="brand" class="img-fluid mt-4 mt-md-0">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-google.png"
+                  alt="brand" class="img-fluid mt-4 mt-md-0">
+                <img
+                  src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-facebook.png"
+                  alt="brand" class="img-fluid mt-4 mt-md-0">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-Job/job-tesla.png"
+                  alt="brand" class="img-fluid me-md-0 mt-4 mt-md-0">
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: Alur -->
+  
+      <!-- START: Benefit -->
+      <section class="choose">
+        <!-- style -->
+        <style scoped>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+            * {
+                font-family: 'Inter', sans-serif !important;
+            }
+
+            body .choose {
+                background-color: #F9FCFC;
+            }
+
+            body .choose h1 {
+                color: #232323;
+                font-weight: 700 !important;
+            }
+
+            body .choose p {
+                color: #879FB0;
+            }
+
+            @media screen and (min-width: 768px) {
+                body .choose h1 {
+                    font-size: 60px !important;
+                }
+            }
+
+            body .cl-blue {
+                color: #0F52BA !important;
+            }
+        </style>
+
+        <div class="container pb-4 px-4">
+          <div class="row text-center d-block pt-5 pb-md-4">
+                <h1 class="my-3">
+                    Benefit
+                </h1>
+                <p>
+                    Komitmen kami untuk menjadikan teman-teman Partner sebagai Prioritas
+                </p>
+            </div>
+            <div class="row py-5">
+                <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/taxes.svg"
+                        alt="taxes" class="img-fluid">
+                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/taxes-color.svg"
+                        alt="taxes" class="img-fluid" style="display: none;">
+                    <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                        Cicilan Terjangkau
+                    </p>
+                    <!-- <p class="mb-0">
+                        Tax advantage which applies to certain accounts or investments.
+                    </p> -->
+                </div>
+                <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/user.svg"
+                        alt="user" class="img-fluid">
+                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/user-color.svg"
+                        alt="user" class="img-fluid" style="display: none;">
+                    <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                        Persyaratan Mudah
+                    </p>
+                    <!-- <p class="mb-0">
+                        A series of policies that offer either property protection of liability coverage.
+                    </p> -->
+                </div>
+                <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/discount.svg"
+                        alt="discount" class="img-fluid">
+                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/discount-color.svg"
+                        alt="user" class="img-fluid" style="display: none;">
+                    <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                        DP Terjangkau
+                    </p>
+                    <!-- <p class="mb-0">
+                        No longer have to negatiate commissions and haggle with other agents.
+                    </p> -->
+                </div>
+                <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/calendar.svg"
+                        alt="calendar" class="img-fluid">
+                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/calendar-color.svg"
+                        alt="user" class="img-fluid" style="display: none;">
+                    <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                        Masa Tenor Panjang
+                    </p>
+                    <!-- <p class="mb-0">
+                        Easy booking system for a host. Try our innovative model.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function coloringgoals(x) {
+                x.classList.add('bg-white');
+                x.classList.add('rounded-24');
+                x.childNodes[1].style.display = "none";
+                x.childNodes[3].style.display = "block";
+            }
+
+            function normalgoals(x) {
+                x.classList.remove('bg-white');
+                x.classList.remove('rounded-24');
+                x.childNodes[1].style.display = "block";
+                x.childNodes[3].style.display = "none";
+            }
+        </script>
+      </section>
+      <!-- END: Benefit -->
+  
+      <footer class="page-footer font-small blue">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap");
+
+            * {
+                font-family: 'Inter', sans-serif !important;
+            }
+
+            body .font-red-hat-display {
+                font-family: 'Red Hat Display', sans-serif !important;
+            }
+
+            body footer {
+                background: #313E60;
+                padding-top: 50px;
+                padding-bottom: 70px;
+            }
+
+            body footer {
+                background: #0F0F0F;
+                padding-top: 50px;
+                padding-bottom: 70px;
+            }
+
+            body footer .logo {
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 38px;
+                color: #FAFAFD;
+            }
+
+            body footer .social-media {
+                margin-top: 55px;
+            }
+
+            body footer .copyright {
+                font-family: 'Red Hat Display', sans-serif !important;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                color: #FAFAFD;
+                margin-top: 20px;
+            }
+
+            body footer .nav-footer p {
+                font-weight: 700 !important;
+                font-family: 'Red Hat Display', sans-serif !important;
+                font-size: 20px;
+                line-height: 135%;
+                color: #FAFAFD;
+            }
+
+            body footer .nav-footer a {
+                font-weight: 400 !important;
+                font-family: 'Red Hat Display', sans-serif !important;
+                font-size: 20px;
+                line-height: 135%;
+                color: #FAFAFD;
+            }
+
+            body footer li {
+                margin-bottom: 16px;
+            }
+        </style>
+        <div class="container text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3 address">
+                    <div class="logo font-red-hat-display">
+                        House
+                    </div>
+                    <div class="social-media">
+                        <a href="#">
+                            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_linkedin.svg"
+                                alt="linkedin" class="img-fluid mr-4">
+                        </a>
+                        <a href="#">
+                            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_facebook.svg"
+                                alt="facebook" class="img-fluid mr-4">
+                        </a>
+                        <a href="#">
+                            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_twitter.svg"
+                                alt="twitter" class="img-fluid mr-4">
+                        </a>
+                        <a href="#">
+                            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/bi_instagram.svg"
+                                alt="twitch" class="img-fluid mr-4">
+                        </a>
+                    </div>
+                    <div class="copyright font-red-hat-display">
+                        2022 @ Partner Perumahan Terbaik
+                    </div>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="row col-md-6 nav-footer">
+                    <div class="col-md-4 mb-md-0 mb-3">
+                        <p>
+                            Site
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Perum Inara 1</a>
+                            </li>
+                            <li>
+                                <a href="#!">Perum Inara 2</a>
+                            </li>
+                            <li>
+                                <a href="#!">nama perumahan lainnya</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-3">
+                        <p>
+                            Lokasi
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Bandar Lampung</a>
+                            </li>
+                            <li>
+                                <a href="#!">Lampung Selatan</a>
+                            </li>
+                            <li>
+                                <a href="#!">Pesawaran</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-3">
+                        <p>
+                            Bank
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Mandiri KPR</a>
+                            </li>
+                            <li>
+                                <a href="#!">BTN</a>
+                            </li>
+                            <li>
+                                <a href="#!">BSI</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+  </html>
